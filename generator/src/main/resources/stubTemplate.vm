@@ -1,0 +1,12 @@
+package ${packageName};
+
+import tbernardino.rmi.base.RmiRestStub;
+
+public class ${className}Stub extends RmiRestStub {
+
+#foreach($method in $methods)
+	public void ${method}() {
+		super.doGet();
+	}
+#end
+}
