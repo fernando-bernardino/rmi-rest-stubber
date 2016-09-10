@@ -14,8 +14,9 @@
 	
 	<properties>
 		<java.version>1.8</java.version>
+		<jersey.version>1.19</jersey.version>
+		<jackson.version>1.9.13</jackson.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<start-class>tbernardino.rmi.test.MainClass</start-class>
 	</properties>
 	
 	<build>
@@ -30,4 +31,21 @@
 			</plugin>
       	</plugins>
 	</build>
+	<dependencies>
+		<dependency>
+	     <groupId>com.sun.jersey</groupId>
+	     <artifactId>jersey-json</artifactId>
+	     <version>${jersey.version}</version>
+	    </dependency>
+	    <dependency>
+	        <groupId>com.sun.jersey</groupId>
+	        <artifactId>jersey-client</artifactId>
+	        <version>${jersey.version}</version>
+	    </dependency>
+		<dependency>
+		    <groupId>org.codehaus.jackson</groupId>
+		    <artifactId>jackson-core-asl</artifactId>
+		    <version>${jackson.version}</version>
+		</dependency>
+    </dependencies>
 </project>
