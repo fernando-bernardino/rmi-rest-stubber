@@ -1,6 +1,6 @@
 package ${packageName};
 
-import tbernardino.rmi.base.RmiRestStub;
+import com.github.tbernardino.rmi.base.RmiRestStub;
 
 public class ${className}Stub extends RmiRestStub {
 
